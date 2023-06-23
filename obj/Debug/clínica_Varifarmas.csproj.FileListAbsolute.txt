@@ -1,0 +1,13 @@
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\clínica_Varifarmas.exe.config
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\clínica_Varifarmas.exe
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\clínica_Varifarmas.pdb
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.AssemblyReference.cache
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.SuggestedBindingRedirects.cache
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Properties.Resources.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.GenerateResource.cache
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.CoreCompileInputs.cache
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.exe
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.pdb
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana1.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana2.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana3Registro.resources
