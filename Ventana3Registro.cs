@@ -66,7 +66,7 @@ namespace clínica_Varifarmas
 
                 File.WriteAllText("database.txt", dni);
             }
-            
+            MessageBox.Show("Se Registro Exitosamente!");
         }
     }
 }
