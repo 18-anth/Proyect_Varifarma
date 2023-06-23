@@ -11,3 +11,10 @@ C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.pd
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana1.resources
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana2.resources
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana3Registro.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\FireSharp.dll
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\Newtonsoft.Json.dll
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\RestSharp.dll
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\Newtonsoft.Json.xml
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\RestSharp.xml
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.CopyComplete

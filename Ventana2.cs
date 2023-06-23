@@ -28,5 +28,10 @@ namespace clínica_Varifarmas
             sesion.Show();
             this.Close();
         }
+
+        private void Ventana2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -9,10 +9,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response; 
+
 namespace clínica_Varifarmas
 {
     public partial class Ventana3Registro : Form
     {
+
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "hcenu1vpO3LdY9fwGa71v2WweWsvuT7f5E89hACc",
+            BasePath = "https://varifarma-proyect-default-rtdb.firebaseio.com/",
+        };
+
+        IFirebaseClient client;
+
         public Ventana3Registro()
         {
             InitializeComponent();
@@ -20,7 +33,12 @@ namespace clínica_Varifarmas
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            client = new FireSharp.FirebaseClient(config);
 
+            if (client != null)
+            {
+                Console.Write("Connection is Estable");
+            }
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -46,27 +64,29 @@ namespace clínica_Varifarmas
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            string dni = textBox1.Text;
-            string name = textBox2.Text;
-            string apellido = textBox3.Text;
-            string email = textBox4.Text;
-            string sex = textBox5.Text;
-            string edad = textBox6.Text;
-            string telf = textBox7.Text;
-            string direction = textBox8.Text;
 
-     
-
-            using (StreamWriter sw = new StreamWriter("database.json"))
+            var data = new Data
             {
-                 
-                sw.WriteLine(dni, name, apellido, email, sex, edad, telf, direction);
+                Id = textBox1.Text,
+                name = textBox2.Text,
+                apellido = textBox3.Text,
+                email = textBox4.Text,
+                sex = textBox5.Text,
+                edad = textBox6.Text,
+                telf = textBox7.Text,
+                direction = textBox8.Text
+            };
 
-                File.WriteAllText("database.txt", dni);
-            }
-            MessageBox.Show("Se Registro Exitosamente!");
+            SetResponse response = await client.SetTaskAsync("Users/"+textBox1.Text, data);
+            Data result = response.ResultAs<Data>();
+
+            MessageBox.Show("Se agregaron los Datos del Usuario: " + result.Id);
+            Ventana1 InicioLogin = new Ventana1();
+            InicioLogin.Show();
+            this.Hide();
+
         }
     }
 }

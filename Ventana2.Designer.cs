@@ -51,20 +51,20 @@
             this.cerrarSesiónToolStripMenuItem,
             this.cerrarProgramaToolStripMenuItem});
             this.hToolStripMenuItem.Name = "hToolStripMenuItem";
-            this.hToolStripMenuItem.Size = new System.Drawing.Size(26, 20);
-            this.hToolStripMenuItem.Text = "h";
+            this.hToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.hToolStripMenuItem.Text = "Archivo";
             // 
             // cerrarSesiónToolStripMenuItem
             // 
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
             // cerrarProgramaToolStripMenuItem
             // 
             this.cerrarProgramaToolStripMenuItem.Name = "cerrarProgramaToolStripMenuItem";
-            this.cerrarProgramaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarProgramaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.cerrarProgramaToolStripMenuItem.Text = "Cerrar Programa";
             this.cerrarProgramaToolStripMenuItem.Click += new System.EventHandler(this.cerrarProgramaToolStripMenuItem_Click);
             // 
@@ -78,6 +78,7 @@
             this.Name = "Ventana2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Ventana2";
+            this.Load += new System.EventHandler(this.Ventana2_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
