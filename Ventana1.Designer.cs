@@ -35,8 +35,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -110,7 +108,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkViolet;
+            this.button2.BackColor = System.Drawing.Color.DarkOrchid;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,8 +124,6 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.label3);
@@ -138,32 +134,9 @@
             this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel2.Location = new System.Drawing.Point(0, 34);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(606, 366);
+            this.panel2.Size = new System.Drawing.Size(606, 314);
             this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DarkViolet;
-            this.button3.Location = new System.Drawing.Point(348, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 40);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Registrate";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(178, 316);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 19);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "No tienes una cuenta?";
             // 
             // label4
             // 
@@ -214,13 +187,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(606, 399);
+            this.ClientSize = new System.Drawing.Size(606, 349);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ventana1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -243,8 +215,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label5;
     }
 }
 

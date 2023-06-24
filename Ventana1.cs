@@ -88,6 +88,13 @@ namespace clínica_Varifarmas
                 Ventana2 Principal = new Ventana2();
                 Principal.Show();
                 this.Hide();
+            }else if(usuario != "admin") {
+
+                MessageBox.Show("Por favor ingresa el Usuario");
+            }
+            else if (contraseña != "admin")
+            {
+                MessageBox.Show("Por favor ingresa la contraseña");
             }
             else
             {

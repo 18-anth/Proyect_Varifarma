@@ -88,5 +88,10 @@ namespace clínica_Varifarmas
             this.Hide();
 
         }
+
+        private void Ventana3Registro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

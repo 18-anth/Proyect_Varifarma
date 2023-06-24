@@ -79,6 +79,12 @@
     <Compile Include="Ventana3Registro.Designer.cs">
       <DependentUpon>Ventana3Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ventana_recervas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana_recervas.Designer.cs">
+      <DependentUpon>Ventana_recervas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ventana1.resx">
       <DependentUpon>Ventana1.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventana3Registro.resx">
       <DependentUpon>Ventana3Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana_recervas.resx">
+      <DependentUpon>Ventana_recervas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="database.json" />
     <None Include="packages.config" />
