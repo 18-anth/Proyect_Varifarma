@@ -53,6 +53,8 @@
             this.recervarPacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.atenciónCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horarioMedicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.henfermerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarMenúToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,8 +62,6 @@
             this.inicioDeSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nosostrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.horarioMedicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.henfermerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -230,9 +230,9 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Snow;
-            this.button8.Location = new System.Drawing.Point(696, 0);
+            this.button8.Location = new System.Drawing.Point(707, 0);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 27);
+            this.button8.Size = new System.Drawing.Size(34, 27);
             this.button8.TabIndex = 2;
             this.button8.Text = "-";
             this.button8.UseVisualStyleBackColor = false;
@@ -244,9 +244,9 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Snow;
-            this.button10.Location = new System.Drawing.Point(645, 0);
+            this.button10.Location = new System.Drawing.Point(663, 0);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 28);
+            this.button10.Size = new System.Drawing.Size(38, 27);
             this.button10.TabIndex = 3;
             this.button10.Text = "D";
             this.button10.UseVisualStyleBackColor = false;
@@ -330,6 +330,7 @@
             this.atenciónCitasToolStripMenuItem.Name = "atenciónCitasToolStripMenuItem";
             this.atenciónCitasToolStripMenuItem.Size = new System.Drawing.Size(211, 24);
             this.atenciónCitasToolStripMenuItem.Text = "Atención Citas";
+            this.atenciónCitasToolStripMenuItem.Click += new System.EventHandler(this.atenciónCitasToolStripMenuItem_Click);
             // 
             // horariosToolStripMenuItem
             // 
@@ -341,6 +342,21 @@
             this.horariosToolStripMenuItem.Size = new System.Drawing.Size(211, 24);
             this.horariosToolStripMenuItem.Text = "Horarios";
             this.horariosToolStripMenuItem.Click += new System.EventHandler(this.horariosToolStripMenuItem_Click);
+            // 
+            // horarioMedicosToolStripMenuItem
+            // 
+            this.horarioMedicosToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.horarioMedicosToolStripMenuItem.Name = "horarioMedicosToolStripMenuItem";
+            this.horarioMedicosToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
+            this.horarioMedicosToolStripMenuItem.Text = "Medicos";
+            this.horarioMedicosToolStripMenuItem.Click += new System.EventHandler(this.horarioMedicosToolStripMenuItem_Click);
+            // 
+            // henfermerasToolStripMenuItem
+            // 
+            this.henfermerasToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.henfermerasToolStripMenuItem.Name = "henfermerasToolStripMenuItem";
+            this.henfermerasToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
+            this.henfermerasToolStripMenuItem.Text = "Henfermeras";
             // 
             // gestionarMenúToolStripMenuItem
             // 
@@ -405,24 +421,9 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(307, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(187, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // horarioMedicosToolStripMenuItem
-            // 
-            this.horarioMedicosToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.horarioMedicosToolStripMenuItem.Name = "horarioMedicosToolStripMenuItem";
-            this.horarioMedicosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.horarioMedicosToolStripMenuItem.Text = "Medicos";
-            this.horarioMedicosToolStripMenuItem.Click += new System.EventHandler(this.horarioMedicosToolStripMenuItem_Click);
-            // 
-            // henfermerasToolStripMenuItem
-            // 
-            this.henfermerasToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.henfermerasToolStripMenuItem.Name = "henfermerasToolStripMenuItem";
-            this.henfermerasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.henfermerasToolStripMenuItem.Text = "Henfermeras";
             // 
             // Ventana2
             // 

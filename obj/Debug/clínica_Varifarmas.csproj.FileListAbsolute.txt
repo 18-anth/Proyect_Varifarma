@@ -19,3 +19,4 @@ C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\Newtonsoft.Json.xml
 C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\RestSharp.xml
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.CopyComplete
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana_recervas.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.VentanaAtencion.resources

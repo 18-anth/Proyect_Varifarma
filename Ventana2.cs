@@ -98,5 +98,12 @@ namespace clínica_Varifarmas
         {
 
         }
+
+        private void atenciónCitasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VentanaAtencion atencion = new VentanaAtencion();
+            atencion.Show();
+            this.Close();
+        }
     }
 }
