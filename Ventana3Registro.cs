@@ -7,8 +7,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-
+using System.Windows.Forms; 
+using Firebase.Database.Query;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response; 
@@ -21,7 +21,7 @@ namespace clínica_Varifarmas
         IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "hcenu1vpO3LdY9fwGa71v2WweWsvuT7f5E89hACc",
-            BasePath = "https://varifarma-proyect-default-rtdb.firebaseio.com/",
+            BasePath = "https://varifarma-proyect-default-rtdb.firebaseio.com",
         };
 
         IFirebaseClient client;
@@ -49,8 +49,8 @@ namespace clínica_Varifarmas
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Se Cancelo el registro exitosamente!");
-            Ventana1 InicioLogin = new Ventana1();
-            InicioLogin.Show();
+            Ventana2 VentanaPrincipal = new Ventana2();
+            VentanaPrincipal.Show();
             this.Hide();
         }
 
@@ -63,6 +63,8 @@ namespace clínica_Varifarmas
         {
 
         }
+
+        
 
         private async void button1_Click(object sender, EventArgs e)
         {
@@ -79,19 +81,38 @@ namespace clínica_Varifarmas
                 direction = textBox8.Text
             };
 
-            SetResponse response = await client.SetTaskAsync("Users/"+textBox1.Text, data);
+            SetResponse response = await client.SetAsync("Information/" + textBox1.Text, data);
             Data result = response.ResultAs<Data>();
 
-            MessageBox.Show("Se agregaron los Datos del Usuario: " + result.Id);
+            MessageBox.Show("Se agregaron los datos del Usuario: " + result.Id);
+
             Ventana1 InicioLogin = new Ventana1();
             InicioLogin.Show();
             this.Hide();
 
         }
 
+        
+
         private void Ventana3Registro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Ventana2 Vent_Principal = new Ventana2();
+            Vent_Principal.Show();
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            // Ocultar la ventana en lugar de cerrarla cuando se hace clic en el botón de minimizar
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Minimized;
+            else if (WindowState == FormWindowState.Minimized)
+                WindowState = FormWindowState.Normal;
         }
     }
 }

@@ -1,4 +1,10 @@
-﻿namespace clínica_Varifarmas
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace clínica_Varifarmas
 {
     internal class Data
     {
@@ -9,7 +15,10 @@
         public string sex { get; set; }
         public string edad { get; set; }
         public string telf { get; set; }
+
+        public string password { get; set; }
+
         public string direction { get; set; }
- 
+
     }
 }
