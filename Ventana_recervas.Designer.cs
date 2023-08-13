@@ -64,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label1.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label1.Location = new System.Drawing.Point(272, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 22);
@@ -84,7 +84,8 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkOrchid;
+            this.button4.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
@@ -97,7 +98,8 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkViolet;
+            this.button5.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
@@ -107,14 +109,15 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Search";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkViolet;
+            this.button6.BackColor = System.Drawing.Color.MediumVioletRed;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(68, 395);
+            this.button6.Location = new System.Drawing.Point(110, 417);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(134, 32);
             this.button6.TabIndex = 7;
@@ -123,7 +126,8 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.DarkOrchid;
+            this.button7.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
@@ -136,9 +140,10 @@
             // 
             // button8
             // 
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.button8.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.button8.Location = new System.Drawing.Point(607, 417);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(101, 32);
@@ -150,7 +155,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label3.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label3.Location = new System.Drawing.Point(305, 362);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 22);
@@ -161,7 +166,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label4.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label4.Location = new System.Drawing.Point(45, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(223, 22);
@@ -172,7 +177,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label5.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label5.Location = new System.Drawing.Point(45, 155);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 22);
@@ -183,7 +188,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label6.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label6.Location = new System.Drawing.Point(45, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 22);
@@ -195,7 +200,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label7.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label7.Location = new System.Drawing.Point(45, 279);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(54, 22);
@@ -206,7 +211,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.radioButton1.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.radioButton1.Location = new System.Drawing.Point(95, 304);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(110, 26);
@@ -219,7 +224,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.radioButton2.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.radioButton2.Location = new System.Drawing.Point(95, 329);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(107, 26);
@@ -231,14 +236,17 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Purple;
             this.textBox1.Location = new System.Drawing.Point(49, 124);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(195, 28);
             this.textBox1.TabIndex = 17;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Purple;
             this.textBox2.Location = new System.Drawing.Point(49, 181);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(195, 28);
@@ -247,6 +255,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Purple;
             this.textBox3.Location = new System.Drawing.Point(49, 241);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(195, 28);
@@ -255,6 +264,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.Color.Purple;
             this.textBox4.Location = new System.Drawing.Point(430, 181);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(195, 28);
@@ -263,6 +273,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.Purple;
             this.textBox5.Location = new System.Drawing.Point(430, 124);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(195, 28);
@@ -272,7 +283,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label8.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label8.Location = new System.Drawing.Point(426, 94);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(91, 22);
@@ -283,7 +294,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label9.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label9.Location = new System.Drawing.Point(426, 155);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(59, 22);
@@ -293,6 +304,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.ForeColor = System.Drawing.Color.Purple;
             this.numericUpDown1.Location = new System.Drawing.Point(430, 242);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(195, 28);
@@ -302,7 +314,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label10.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label10.Location = new System.Drawing.Point(426, 215);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 22);
@@ -312,7 +324,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.textBox6.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.textBox6.Location = new System.Drawing.Point(276, 417);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(195, 28);
@@ -321,7 +333,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkOrchid;
+            this.panel1.BackColor = System.Drawing.Color.MediumVioletRed;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -337,6 +349,7 @@
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(676, 0);
@@ -350,6 +363,7 @@
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
@@ -409,6 +423,7 @@
             this.Name = "Ventana_recervas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventana_recervas";
+            this.Load += new System.EventHandler(this.Ventana_recervas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

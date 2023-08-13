@@ -1,5 +1,4 @@
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.AssemblyReference.cache
-C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.SuggestedBindingRedirects.cache
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana1.resources
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Properties.Resources.resources
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana2.resources
@@ -82,3 +81,8 @@ C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\System.ValueTuple.xml
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.csproj.CopyComplete
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.exe
 C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.pdb
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.RegisterAdmin.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\bin\Debug\FirebaseSharp.Portable.dll
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Ventana_Administracion.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.REGISTRO_PACIENTE.resources
+C:\Users\antho\source\repos\clínica_Varifarmas\obj\Debug\clínica_Varifarmas.Nosotros.resources

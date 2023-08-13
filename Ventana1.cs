@@ -34,15 +34,12 @@ namespace clínica_Varifarmas
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void button1_Click_1(object sender, EventArgs e)
         {
+             this.Hide();
             this.Close();
-            this.Hide();
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -52,9 +49,6 @@ namespace clínica_Varifarmas
         // FUNCION DE CHECKEDBOX
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
-
-
 
             if (checkBox1.Checked)
             {
@@ -75,7 +69,7 @@ namespace clínica_Varifarmas
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FirebaseResponse response = client.Get("Information/");
+            FirebaseResponse response = client.Get("Users/");
                 Dictionary<string, Data> result = response.ResultAs<Dictionary<string, Data>>();
 
 
@@ -85,7 +79,6 @@ namespace clínica_Varifarmas
             }
             else {
                 
-
                 
                 foreach (var get in result)
                 {
@@ -107,6 +100,7 @@ namespace clínica_Varifarmas
                          if (textBox2.Text != passrresult)
                         {
                             MessageBox.Show("Por favor ingresa la contraseña correcta: " + textBox2.Text);
+
                             if (textBox1.Text != Idrresult)
                             {
                                 MessageBox.Show("Por favor ingresa el ID correcto: " + textBox1.Text);
@@ -177,7 +171,7 @@ namespace clínica_Varifarmas
         {
             client = new FireSharp.FirebaseClient(config);
 
-            if (client!= null)
+            if (client != null)
             {
                Console.Write("Connection is Estable");
             }
@@ -188,16 +182,7 @@ namespace clínica_Varifarmas
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Ventana3Registro Registro = new Ventana3Registro();
-            this.Hide();
-            Registro.Show();
-            this.Hide ();
-        }
-
-         
-
+      
         
     }
 }

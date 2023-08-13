@@ -47,6 +47,9 @@
     <Reference Include="FirebaseAdmin, Version=2.4.0.0, Culture=neutral, PublicKeyToken=97c8d00c348326ed, processorArchitecture=MSIL">
       <HintPath>packages\FirebaseAdmin.2.4.0\lib\net461\FirebaseAdmin.dll</HintPath>
     </Reference>
+    <Reference Include="FirebaseSharp.Portable, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FirebaseSharp.2.0.4\lib\portable-net45+win+wp80\FirebaseSharp.Portable.dll</HintPath>
+    </Reference>
     <Reference Include="FireSharp, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FireSharp.2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll</HintPath>
     </Reference>
@@ -282,7 +285,32 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="counter.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="Nosotros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nosotros.Designer.cs">
+      <DependentUpon>Nosotros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRO_PACIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRO_PACIENTE.Designer.cs">
+      <DependentUpon>REGISTRO_PACIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana_Administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana_Administracion.Designer.cs">
+      <DependentUpon>Ventana_Administracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterAdmin.Designer.cs">
+      <DependentUpon>RegisterAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventana1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +343,15 @@
     <Compile Include="Ventana_recervas.Designer.cs">
       <DependentUpon>Ventana_recervas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Nosotros.resx">
+      <DependentUpon>Nosotros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterAdmin.resx">
+      <DependentUpon>RegisterAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRO_PACIENTE.resx">
+      <DependentUpon>REGISTRO_PACIENTE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventana1.resx">
       <DependentUpon>Ventana1.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,6 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaAtencion.resx">
       <DependentUpon>VentanaAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana_Administracion.resx">
+      <DependentUpon>Ventana_Administracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventana_recervas.resx">
       <DependentUpon>Ventana_recervas.cs</DependentUpon>

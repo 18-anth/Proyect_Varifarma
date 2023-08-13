@@ -20,5 +20,25 @@ namespace clínica_Varifarmas
 
         public string direction { get; set; }
 
+
+
+        public string getId() { return Id; }
+        public string getname() { return name; }
+        public string getapellido() { return apellido; }
+        public string getemail() { return email; }
+        public string getsex() { return sex; }
+        public string getedad() { return edad; }
+        public string gettelf() { return telf; }
+        public string getdirection() { return direction; }
+
+        public void setId(string Id) { this.Id = Id; }
+        public void setname(string name) {this.name = name; }
+        public void setapellido(string apellido) { this.apellido = apellido; }
+        public void setemail(string email) { this.email = email; }
+        public void setsex(string sex) { this.sex = sex; }
+        public void setedad(string edad) { this.edad = edad; }
+        public void settelf(string telf) {this.telf = telf; }
+        public void setdirection(string direction) { this.direction =  direction; }
+
     }
 }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +10,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Google.Apis.Requests.BatchRequest;
 
 namespace clínica_Varifarmas
 {
+
     public partial class Ventana2 : Form
     {
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "hcenu1vpO3LdY9fwGa71v2WweWsvuT7f5E89hACc",
+            BasePath = "https://varifarma-proyect-default-rtdb.firebaseio.com",
+        };
+
+        IFirebaseClient client;
+
         public Ventana2()
         {
             InitializeComponent();
@@ -77,16 +90,32 @@ namespace clínica_Varifarmas
 
         private void registrarPacientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ventana3Registro registro = new Ventana3Registro(); 
+            REGISTRO_PACIENTE registro = new REGISTRO_PACIENTE();   
             registro.Show();
             this.Close();
         }
 
-        private void inicioDeSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void inicioDeSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ventana1 inicio = new Ventana1();
-            inicio.Show();
-            this.Close();
+            Data data = new Data();
+
+            FirebaseResponse resp2 = await client.GetAsync("Information/");
+            Data obj2 = resp2.ResultAs<Data>();
+
+            if (string.IsNullOrEmpty(obj2.getId()))
+            {
+
+                MessageBox.Show("Usted ya inicio sesión" + obj2.getId());
+            }
+            else
+            {
+                MessageBox.Show("Usuario no inicio sesión");
+                Ventana1 inicio = new Ventana1();
+                inicio.Show();
+                this.Close();
+                this.Hide();
+            }
+
         }
 
         private void horarioMedicosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -104,6 +133,37 @@ namespace clínica_Varifarmas
             VentanaAtencion atencion = new VentanaAtencion();
             atencion.Show();
             this.Close();
+        }
+
+        private void registrarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegisterAdmin admin = new RegisterAdmin();  
+            admin.Show();   
+            this.Close();   
+        }
+
+        private void panelAdministraciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ventana_Administracion adm = new Ventana_Administracion();
+            adm.Show();
+            this.Close();
+        }
+
+        private void nosostrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Nosotros nos = new Nosotros();
+            nos.Show(); 
+            this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            client = new FireSharp.FirebaseClient(config);
+
+            if (client != null)
+            {
+                Console.Write("Connection is Estable");
+            }
         }
     }
 }
